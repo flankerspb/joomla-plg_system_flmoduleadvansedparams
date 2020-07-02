@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+	<fieldset
+		name="fl_advansed"
+		label="PLG_FLMAP_TAB_LABEL"
+		addfieldpath="/plugins/system/flmoduleadvansedparams/fields/"
+	>
+		<fields name="params">
+			<fields name="fl_advansed">
+				<fields name="basic"/>
+				<fields name="url"/>
+				<fields name="languege"/>
+				<fields name="client"/>
+				<fields name="component">
+					
+					<field type="spacer" label="&lt;hr/&gt;"/>
+					
+					<field
+						name="mode"
+						label="PLG_FLMAP_GROUP_COMPONENT"
+						type="radio"
+						class="btn-group"
+						labelclass="lead"
+						default=""
+					>
+						<option value="">JOFF</option>
+						<option value="1">JON</option>
+					</field>
+					
+				</fields>
+			</fields>
+		</fields>
+	</fieldset>
+</form>
+
+<!--
+client
+		device
+		os
+		browser
+
+
+
+!-->

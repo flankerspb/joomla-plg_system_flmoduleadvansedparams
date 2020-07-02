@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+	
+	<fields name="content">
+		
+		<field type="note" label="PLG_FLMAP_COM_CONTENT_JOOMLA"/>
+		
+		<fields name="basic">
+		
+			<field
+				name="mode"
+				label="PLG_FLMAP_PAGE_TYPES"
+				type="radio"
+				class="btn-group"
+				default=""
+			>
+				<option value="">JOFF</option>
+				<option value="0">PLG_FLMAP_EXCEPT</option>
+				<option value="1">PLG_FLMAP_ONLY</option>
+			</field>
+			
+			<field
+				name="items"
+				label="JSELECT"
+				type="list"
+				multiple="true"
+				showon="mode!:"
+			>
+				<option value="article">JGLOBAL_ARTICLES</option>
+				<option value="category">JCATEGORY</option>
+				<option value="blog">JGLOBAL_BLOG</option>
+				<option value="categories">JCATEGORIES</option>
+				<option value="featured">JFEATURED</option>
+				<option value="archive">JARCHIVED</option>
+			</field>
+		
+		</fields>
+		
+		<fields name="article">
+		
+			<field
+				name="mode"
+				label="JGLOBAL_ARTICLES"
+				type="radio"
+				class="btn-group"
+				default=""
+			>
+				<option value="">JOFF</option>
+				<option value="0">PLG_FLMAP_EXCEPT</option>
+				<option value="1">PLG_FLMAP_ONLY</option>
+			</field>
+			
+			<field
+				name="items"
+				label="JSELECT"
+				multiple="true"
+				showon="mode!:"
+				type="sql"
+				query="SELECT CONCAT(title, ' (', id, ')') AS value, id FROM #__content ORDER BY value"
+				key_field="id"
+				value_field="value"
+			/>
+		
+		</fields>
+		
+	</fields>
+	
+</form>

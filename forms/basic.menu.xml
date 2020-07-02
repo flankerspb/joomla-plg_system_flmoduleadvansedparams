@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+	
+	<fields name="menu">
+	
+		<field
+			name="mode"
+			label="PLG_FLMAP_MENU_CHILDREN"
+			type="radio"
+			class="btn-group"
+			default=""
+		>
+			<option value="">JOFF</option>
+				<option value="0">PLG_FLMAP_EXCEPT</option>
+				<option value="1">PLG_FLMAP_ONLY</option>
+		</field>
+	
+	</fields>
+	
+</form>

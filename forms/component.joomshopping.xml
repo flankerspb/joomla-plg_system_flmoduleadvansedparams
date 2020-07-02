@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+	
+	<fields name="joomshopping">
+		
+		<field type="note" label="JOOMSHOPPING"/>
+		
+		<fields name="basic">
+		
+			<field
+				name="mode"
+				label="PLG_FLMAP_PAGE_TYPES"
+				type="radio"
+				class="btn-group"
+				default=""
+			>
+				<option value="">JOFF</option>
+				<option value="0">PLG_FLMAP_EXCEPT</option>
+				<option value="1">PLG_FLMAP_ONLY</option>
+			</field>
+			
+			<field
+				name="items"
+				label="JSELECT"
+				type="list"
+				multiple="true"
+				showon="mode!:"
+			>
+				<option value="product">PRODUCTS</option>
+				<option value="category">CATEGORIES</option>
+				<option value="shop">SHOP</option>
+				<option value="manufacturer">MANUFACTURERS</option>
+				<option value="vendor">VENDORS</option>
+			</field>
+		
+		</fields>
+		
+	</fields>
+	
+</form>
